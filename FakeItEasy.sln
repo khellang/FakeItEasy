@@ -1,4 +1,4 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
@@ -27,28 +27,28 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{4B5813
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakeItEasy", "FakeItEasy\FakeItEasy.csproj", "{80721425-68E5-48DC-87EA-41D63D0B45FA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakeItEasy", "src\FakeItEasy\FakeItEasy.csproj", "{80721425-68E5-48DC-87EA-41D63D0B45FA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakeItEasy.Examples", "FakeItEasy.Examples\FakeItEasy.Examples.csproj", "{1ED2F1A2-40E3-498C-B13F-AF066EACF58F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakeItEasy.Examples", "src\FakeItEasy.Examples\FakeItEasy.Examples.csproj", "{1ED2F1A2-40E3-498C-B13F-AF066EACF58F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakeItEasy.Tests", "FakeItEasy.Tests\FakeItEasy.Tests.csproj", "{0E26272D-045A-47C2-8928-BD9B980115D5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakeItEasy.Tests", "test\FakeItEasy.Tests\FakeItEasy.Tests.csproj", "{0E26272D-045A-47C2-8928-BD9B980115D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakeItEasy.IntegrationTests", "FakeItEasy.IntegrationTests\FakeItEasy.IntegrationTests.csproj", "{C291B61B-0729-4DC5-B8E4-147A8E3F801F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakeItEasy.IntegrationTests", "test\FakeItEasy.IntegrationTests\FakeItEasy.IntegrationTests.csproj", "{C291B61B-0729-4DC5-B8E4-147A8E3F801F}"
 	ProjectSection(ProjectDependencies) = postProject
 		{30396678-D653-4C67-A507-1749424A24CD} = {30396678-D653-4C67-A507-1749424A24CD}
 	EndProjectSection
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FakeItEasy.IntegrationTests.VB", "FakeItEasy.IntegrationTests.VB\FakeItEasy.IntegrationTests.VB.vbproj", "{69A27B0A-710B-4CEC-B159-56E34C788665}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FakeItEasy.IntegrationTests.VB", "test\FakeItEasy.IntegrationTests.VB\FakeItEasy.IntegrationTests.VB.vbproj", "{69A27B0A-710B-4CEC-B159-56E34C788665}"
 EndProject
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FakeItEasy.Examples.VB", "FakeItEasy.Examples.VB\FakeItEasy.Examples.VB.vbproj", "{193C944B-733B-4E01-87A3-73F7AB40CDC7}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "FakeItEasy.Examples.VB", "src\FakeItEasy.Examples.VB\FakeItEasy.Examples.VB.vbproj", "{193C944B-733B-4E01-87A3-73F7AB40CDC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakeItEasy.Specs", "FakeItEasy.Specs\FakeItEasy.Specs.csproj", "{FA539A2D-98DC-4300-9A2C-EC6FE38A7392}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakeItEasy.Specs", "test\FakeItEasy.Specs\FakeItEasy.Specs.csproj", "{FA539A2D-98DC-4300-9A2C-EC6FE38A7392}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakeItEasy.Net35", "FakeItEasy.Net35\FakeItEasy.Net35.csproj", "{9F875DD4-9C9A-4E8A-9C13-EFEE41C749F3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakeItEasy.Net35", "src\FakeItEasy.Net35\FakeItEasy.Net35.csproj", "{9F875DD4-9C9A-4E8A-9C13-EFEE41C749F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakeItEasy.Net35.Tests", "FakeItEasy.Net35.Tests\FakeItEasy.Net35.Tests.csproj", "{E029C5AB-EC90-45B0-BBD9-29A60864B137}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakeItEasy.Net35.Tests", "test\FakeItEasy.Net35.Tests\FakeItEasy.Net35.Tests.csproj", "{E029C5AB-EC90-45B0-BBD9-29A60864B137}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakeItEasy.IntegrationTests.External", "FakeItEasy.IntegrationTests.External\FakeItEasy.IntegrationTests.External.csproj", "{30396678-D653-4C67-A507-1749424A24CD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakeItEasy.IntegrationTests.External", "test\FakeItEasy.IntegrationTests.External\FakeItEasy.IntegrationTests.External.csproj", "{30396678-D653-4C67-A507-1749424A24CD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit", "Unit", "{DC5EAE30-96E3-4D38-B3C5-33E587C9FB76}"
 EndProject

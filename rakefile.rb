@@ -1,31 +1,31 @@
 require 'albacore'
 
 msbuild_command = "C:/Program Files (x86)/MSBuild/12.0/Bin/MSBuild.exe"
-nuget_command  = "Source/packages/NuGet.CommandLine.2.8.0/tools/NuGet.exe"
-nunit_command  = "Source/packages/NUnit.Runners.2.6.3/tools/nunit-console.exe"
-mspec_command  = "Source/packages/Machine.Specifications.Runner.Console.0.9.0/tools/mspec-clr4.exe"
+nuget_command  = "packages/NuGet.CommandLine.2.8.0/tools/NuGet.exe"
+nunit_command  = "packages/NUnit.Runners.2.6.3/tools/nunit-console.exe"
+mspec_command  = "packages/Machine.Specifications.Runner.Console.0.9.0/tools/mspec-clr4.exe"
 
-solution       = "Source/FakeItEasy.sln"
-assembly_info  = "Source/CommonAssemblyInfo.cs"
+solution       = "FakeItEasy.sln"
+assembly_info  = "CommonAssemblyInfo.cs"
 version        = IO.read(assembly_info)[/AssemblyInformationalVersion\("([^"]+)"\)/, 1]
 version_suffix = ENV["VERSION_SUFFIX"]
-nuspec         = "Source/FakeItEasy.nuspec"
+nuspec         = "FakeItEasy.nuspec"
 logs           = "artifacts/logs"
 output         = "artifacts/output"
 tests          = "artifacts/tests"
 
 unit_tests = [
-  "Source/FakeItEasy.Net35.Tests/bin/Release/FakeItEasy.Net35.Tests.dll",
-  "Source/FakeItEasy.Tests/bin/Release/FakeItEasy.Tests.dll",
+  "test/FakeItEasy.Net35.Tests/bin/Release/FakeItEasy.Net35.Tests.dll",
+  "test/FakeItEasy.Tests/bin/Release/FakeItEasy.Tests.dll",
 ]
 
 integration_tests = [
-  "Source/FakeItEasy.IntegrationTests/bin/Release/FakeItEasy.IntegrationTests.dll",
-  "Source/FakeItEasy.IntegrationTests.VB/bin/Release/FakeItEasy.IntegrationTests.VB.dll"
+  "test/FakeItEasy.IntegrationTests/bin/Release/FakeItEasy.IntegrationTests.dll",
+  "test/FakeItEasy.IntegrationTests.VB/bin/Release/FakeItEasy.IntegrationTests.VB.dll"
 ]
 
 specs = [
-  "Source/FakeItEasy.Specs/bin/Release/FakeItEasy.Specs.dll"
+  "test/FakeItEasy.Specs/bin/Release/FakeItEasy.Specs.dll"
 ]
 
 repo = 'FakeItEasy/FakeItEasy'
